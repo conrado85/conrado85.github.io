@@ -55,7 +55,7 @@ span{
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--other-color);
-    margin-left: 40px;
+    margin-left: 15px;
     transition: all .50 ease;
 }
 .navlist a:hover{
