@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
@@ -44,7 +44,7 @@
     </header>
     <!--- hero --->
     <section class="hero" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>¡hola!</h4>
             <h1>Yo soy  <span>Conrado Gonzaléz</span></h1>
             <p>Soy desarrollador web,dando sus primeros pasos en el mundo de la programacion.</p>
@@ -63,10 +63,10 @@
 
     <!---about --->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="Fotos/img_conrado.png" alt="imagen">
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in-up">
             <h2>Soy diseñador <span> Web.</span> <br>creador de contenido</h2>
             <div class="exp-area">
                 <p class="exp">
@@ -95,11 +95,11 @@
     </section>
     <!---servicios --->
     <section class="services" id="services" >
-        <div class="center-text"> 
+        <div class="center-text" data-aos="fade-oown"> 
             <h2>Mi <span>Servicios</span></h2>
         </div> 
 
-        <div class="services-content">  
+        <div class="services-content"  data-aos="zoom-in-up">  
             <div class="box">
                 <img src="Fotos/s-1.svg" alt="imagen">
                 <h3>UI/UX Design</h3>
@@ -128,11 +128,13 @@
     </section>
 
     <!---portfolio --->
+
     <section class="portfolio" id="portfolio">
-        <div class="center-text"> 
+        <div class="center-text" data-aos="fade-down"> 
             <h2>Mi <span>Porfolio</span></h2>
         </div>
-        <div class="portfolio-content">
+
+        <div class="portfolio-content" data-aos="zoom-in-up">
             <div class="row">
                 <img src="Fotos/port-1.jpg" alt="fotos">
                 <div class="main-row">
@@ -238,6 +240,14 @@
 
     <!---js link --->
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1400,
+      });
+    </script>
 
 </body>
 </html>
